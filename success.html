@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Registration - Starlight Eventz</title>
+    <link rel="stylesheet" href="vendor_register.html"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <section class="register">
+        <div class="register-box">
+            <h2>Vendor Registration</h2>
+            <form action="success.html" method="GET">  <!-- Redirects to success.html -->
+                <div class="input-box">
+                    <label for="vendor-name">Name</label>
+                    <input type="text" id="vendor-name" name="vendor_name" placeholder="Enter your Name" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="service">Type of Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="Wedding Venue">Wedding Venue</option>
+                        <option value="Makeup Artist">Makeup Artist</option>
+                        <option value="Photography">Photography</option>
+                        <option value="Catering">Catering</option>
+                        <option value="Music Band">Music Band</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Register as Vendor</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
